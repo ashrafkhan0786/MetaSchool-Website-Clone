@@ -15,9 +15,19 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
+  color: #212529;
 }
 a {
+  color: #ad3fa6;
+  cursor: pointer;
   text-decoration: none;
+}
+p {
+  color: #555;
+  font-size: 17px;
+  line-height: 29px;
+  margin-bottom: 1rem;
+  margin-top: 0;
 }
 .btn {
   border-radius: 5px;
@@ -111,6 +121,7 @@ p {
   transition: all 0.2s ease 0s;
 }
 .topline .navbar-items .btn.btn-primary {
+  color: #fff;
   border-radius: 0 0;
   height: 100%;
   margin-left: 25px;
@@ -187,11 +198,100 @@ p {
 }
 
 .courses .co-heading h2 {
-  font-size: calc(1.325rem + 0.9vw);
+  font-size: 2rem;
+  color: #303030;
   font-weight: 600;
   margin-bottom: 0.5rem;
+  /* margin-top: 40rem; */
+}
+
+.courses .blockchain-box {
+  display: inline-block;
+  float: none;
+  margin-top: 30px;
+  padding: 0 15px;
+  position: relative;
+  width: 33.333%;
+}
+.blockchain-box > a {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.blockchain-box .blockchain-big-box {
+  align-items: center;
+  align-items: self-start;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  float: left;
+  padding: 30px;
+  text-align: left;
+  transition: all 0.3s ease 0s;
+  width: 100%;
+}
+.block-img {
+  border-radius: 24px;
+  float: left;
+  padding: 22px;
+  text-align: center;
+  transition: all 0.3s ease 0s;
+  width: 100%;
+}
+.block-details {
+  padding-left: 0;
+  padding-top: 20px;
+  width: 100%;
+}
+.blockchain-box .blockchain-big-box h3 {
+  color: #000;
+  font-size: 21px;
+  font-weight: 600;
+  margin-bottom: 1px;
   margin-top: 0;
 }
+.block-details > p {
+  float: left;
+  line-height: 27px;
+  margin-top: 13px;
+  width: 100%;
+}
+.logos{
+  float: left;
+  margin-top: 40px;
+  width: 100%;
+}
+.logos span {
+  color: #979797;
+  display: inline-block;
+  float: none;
+  font-size: 12px;
+  line-height: 16px;
+  margin: 10px 25px;
+  width: 70px;
+}
+.logos span img {
+  margin-bottom: 8px;
+  opacity: .3;
+  transition: all .3s ease 0s;
+  width: 50px;
+  vertical-align: middle;
+}
+.blockchain-list.logos a.btn.btn-outline-primary {
+  border: 1px solid #c53aae;
+  color: #c53aae;
+  background-color: #fff
+  ;
+}
+.btn.btn-lg {
+  font-size: 16px;
+  padding: 17px 42px;
+}
+
 /* ##################### Media Query####### */
 @media (max-width: 980px) {
   .btn.btn-lg {
@@ -202,6 +302,15 @@ p {
   .signup-counts {
     left: auto;
     right: 70% !important;
+  }
+  .courses .blockchain-list .blockchain-box {
+    margin: 0;
+    width: 50%;
+  }
+  .btn.btn-lg {
+    font-size: 14px;
+    min-height: 45px;
+    padding: 11px 17px;
   }
 }
 @media (max-width: 760px) {
@@ -238,6 +347,28 @@ p {
   .signup-counts {
     left: 0;
     right: auto;
+  }
+
+  .courses .blockchain-list .blockchain-box {
+    margin: 0;
+    width: 100%;
+  }
+  .blockchain-box .blockchain-big-box {
+    float: left;
+    width: 100%;
+  }
+  .blockchain-box .blockchain-big-box h3 {
+    font-size: 15px;
+    margin-top: 9px;
+  }
+  .blockchain-box .blockchain-big-box span {
+    font-size: 12px;
+    line-height: 16px;
+    margin-top: 6px;
+    padding: 0 10px;
+  }
+  .logos {
+    margin-top: 10px;
   }
 }
 
@@ -284,5 +415,42 @@ p {
   .signup-counts p {
     font-size: 12px;
     line-height: 18px;
+  }
+
+  .courses .blockchain-list .blockchain-box {
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    text-align: center;
+    width: 100%;
+  }
+  .blockchain-box .blockchain-big-box {
+    border-radius: 10px;
+    display: inline-block;
+    margin: 0;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+  }
+  .block-img {
+    border-radius: 10px;
+    padding: 20px 0;
+    width: 100%;
+  }
+  .block-details {
+    float: left;
+    margin-top: 5px;
+    padding-left: 0;
+    width: 100%;
+  }
+  .logos span {
+    font-size: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    width: 25%;
+  }
+  .logos span {
+    font-size: 10px;
   }
 }
