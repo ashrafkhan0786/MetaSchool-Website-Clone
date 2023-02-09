@@ -107,7 +107,6 @@ p {
 
 .topline .navbar-items {
   float: right;
-  /* border: 1px solid red; */
 }
 .topline .navbar-items .nav-items {
   border-radius: 0 0 0 15px;
@@ -117,7 +116,7 @@ p {
 .topline .navbar-items .nav-items a {
   color: #666;
   font-size: 15px;
-  padding: 20px 22px;
+  padding: 20px 25px;
   transition: all 0.2s ease 0s;
 }
 .topline .navbar-items .btn.btn-primary {
@@ -125,7 +124,7 @@ p {
   border-radius: 0 0;
   height: 100%;
   margin-left: 25px;
-  padding: 20px 22px;
+  padding: 20px 25px;
 }
 
 /* ############ */
@@ -140,15 +139,18 @@ p {
   float: left;
 }
 .showcase .showcase-head h1 {
-  font-size: 40px;
-  line-height: 47px;
-  margin-top: 0;
+  font-size: 60px;
   color: #303030;
-  margin-bottom: 9px;
   font-weight: 700;
+  float: left;
+  line-height: 70px;
+  margin-bottom: 9px;
+  margin-top: 14px;
+  width: 100%;
 }
 .showcase .showcase-head p {
   font-size: 15px;
+  font-weight: 400;
   line-height: 28px;
   margin-bottom: 19px;
   color: #444;
@@ -157,7 +159,8 @@ p {
 }
 .btn.btn-lg {
   font-size: 16px;
-  padding: 17px 42px;
+  padding: 14px 28px;
+  border-radius: 18px;
 }
 .globe-gif {
   display: inline-block;
@@ -197,12 +200,19 @@ p {
   width: 100%;
 }
 
-.courses .co-heading h2 {
-  font-size: 2rem;
+.courses .co-heading h2.co-h2 {
+  font-size: 3rem;
   color: #303030;
   font-weight: 600;
   margin-bottom: 0.5rem;
   /* margin-top: 40rem; */
+}
+.courses .co-heading p {
+  color: #555;
+  font-size: 15px;
+  line-height: 29px;
+  margin-bottom: 1rem;
+  margin-top: 0;
 }
 
 .courses .blockchain-box {
@@ -259,13 +269,17 @@ p {
   line-height: 27px;
   margin-top: 13px;
   width: 100%;
+  font-size: 15px;
 }
-.logos{
+.block-details .btn.btn-sm{
+  border-radius: 20px;
+}
+.logos {
   float: left;
   margin-top: 40px;
   width: 100%;
 }
-.logos span {
+.logos span, .logos-section span{
   color: #979797;
   display: inline-block;
   float: none;
@@ -274,26 +288,63 @@ p {
   margin: 10px 25px;
   width: 70px;
 }
-.logos span img {
+.logos span img, .logos-svg span img{
   margin-bottom: 8px;
-  opacity: .3;
-  transition: all .3s ease 0s;
+  opacity: 0.3;
+  transition: all 0.3s ease 0s;
   width: 50px;
   vertical-align: middle;
 }
-.blockchain-list.logos a.btn.btn-outline-primary {
+.blockchain-list .sebtn a.btn1.btn-outline-primary {
   border: 1px solid #c53aae;
   color: #c53aae;
-  background-color: #fff
-  ;
+  background-color: #fff;
+  border-radius: 15px;
+  color: #c53aae;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  padding: 12px 29px;
+  transition: all 0.2s ease 0s;
 }
-.btn.btn-lg {
+.btn1.btn-lg {
   font-size: 16px;
   padding: 17px 42px;
 }
 
+.logos-section .logos-sec-heading h2{
+  font-size: 2rem;
+  color: #303030;
+  font-weight: 500;
+}
+
+.logos span img:hover,.logos-svg span img:hover {
+  opacity: 1;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+.blockchain-list .sebtn a.btn1:hover{
+  background-color: #f7def5;
+}
+.blockchain-list .blockchain-box:hover > .blockchain-big-box{
+  background: #ffe0fa;
+  box-shadow: none;
+}
+
+
+
+
+
+
+
 /* ##################### Media Query####### */
+
 @media (max-width: 980px) {
+  .showcase .showcase-head h1 {
+    font-size: 40px;
+    margin-top: 0;
+    line-height 47;
+  }
   .btn.btn-lg {
     font-size: 14px;
     min-height: 45px;
@@ -307,7 +358,7 @@ p {
     margin: 0;
     width: 50%;
   }
-  .btn.btn-lg {
+  .btn1.btn-lg {
     font-size: 14px;
     min-height: 45px;
     padding: 11px 17px;
@@ -347,6 +398,13 @@ p {
   .signup-counts {
     left: 0;
     right: auto;
+  }
+  .courses .co-heading h2.co-h2 {
+    font-size: 3rem;
+    color: #303030;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    /* margin-top: 40rem; */
   }
 
   .courses .blockchain-list .blockchain-box {
@@ -415,6 +473,13 @@ p {
   .signup-counts p {
     font-size: 12px;
     line-height: 18px;
+  }
+  .courses .co-heading h2.co-h2 {
+    font-size: 2rem;
+    color: #303030;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    /* margin-top: 40rem; */
   }
 
   .courses .blockchain-list .blockchain-box {
