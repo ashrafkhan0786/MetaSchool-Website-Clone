@@ -303,7 +303,7 @@ p {
   color: #c53aae;
   cursor: pointer;
   display: inline-block;
-  font-size: 16px;
+  font-size: 13px;
   padding: 12px 29px;
   transition: all 0.2s ease 0s;
 }
@@ -329,6 +329,12 @@ p {
 .blockchain-list .blockchain-box:hover > .blockchain-big-box{
   background: #ffe0fa;
   box-shadow: none;
+}
+
+
+.metaschool-features h3 {
+  font-size: 22px;
+  margin-bottom: 13px;
 }
 
 
