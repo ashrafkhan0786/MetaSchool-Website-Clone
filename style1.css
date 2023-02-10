@@ -283,7 +283,7 @@ p {
   width: 100%;
   font-size: 15px;
 }
-.block-details .btn.btn-sm{
+.block-details .btn.btn-sm {
   border-radius: 20px;
 }
 .logos {
@@ -291,7 +291,8 @@ p {
   margin-top: 40px;
   width: 100%;
 }
-.logos span, .logos-section span{
+.logos span,
+.logos-section span {
   color: #979797;
   display: inline-block;
   float: none;
@@ -300,7 +301,8 @@ p {
   margin: 10px 25px;
   width: 70px;
 }
-.logos span img, .logos-svg span img{
+.logos span img,
+.logos-svg span img {
   margin-bottom: 8px;
   opacity: 0.3;
   transition: all 0.3s ease 0s;
@@ -324,32 +326,32 @@ p {
   padding: 17px 42px;
 }
 
-.logos-section .logos-sec-heading h2{
+.logos-section .logos-sec-heading h2 {
   font-size: 2rem;
   color: #303030;
   font-weight: 500;
 }
 
-.logos span img:hover,.logos-svg span img:hover {
+.logos span img:hover,
+.logos-svg span img:hover {
   opacity: 1;
   cursor: pointer;
   transition: all 0.3s ease 0s;
 }
-.blockchain-list .sebtn a.btn1:hover{
+.blockchain-list .sebtn a.btn1:hover {
   background-color: #f7def5;
 }
-.blockchain-list .blockchain-box:hover > .blockchain-big-box{
+.blockchain-list .blockchain-box:hover > .blockchain-big-box {
   background: #ffe0fa;
   box-shadow: none;
 }
-
 
 .metaschool-features h3 {
   font-size: 22px;
   margin-bottom: 13px;
   font-weight: 600;
 }
-.feature-img{
+.feature-img {
   align-items: center;
   border-radius: 30px;
   display: flex;
@@ -360,11 +362,17 @@ p {
   width: 90%;
 }
 
-
-
-
-
-
+.first-col {
+  width: 20%;
+  float: left;
+}
+.second-col {
+  display: inline-block;
+  width: 50%;
+}
+.second-col p{
+  font-size: 16px;
+}
 
 /* ##################### Media Query####### */
 
@@ -394,6 +402,14 @@ p {
   }
   .feature-img {
     font-size: 48px;
+  }
+  .first-col {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+  }
+  .second-col {
+    flex: 0 0 auto;
+    width: 50%;
   }
 }
 @media (max-width: 760px) {
@@ -465,9 +481,17 @@ p {
     margin-bottom: 10px;
   }
   .metaschool-features p {
-    font-size: 14px;
+    font-size: 13px;
     line-height: 24px;
     margin-bottom: 0;
+  }
+  .first-col {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+  }
+  .second-col {
+    flex: 0 0 auto;
+    width: 50%;
   }
 }
 
@@ -520,7 +544,6 @@ p {
     color: #303030;
     font-weight: 600;
     margin-bottom: 0.5rem;
-    /* margin-top: 40rem; */
   }
 
   .courses .blockchain-list .blockchain-box {
@@ -560,19 +583,25 @@ p {
     font-size: 10px;
   }
 
-  .first-col{
+  .first-col {
     flex: 0 0 auto;
     width: 41.66666667%;
   }
-  .second-col{
+  .second-col {
     flex: 0 0 auto;
-width: 58.33333333%;
+    width: 80%;
   }
-  .feature-img {
+  .metaschool-features .row .feature-img {
     border-radius: 10px;
     font-size: 17px;
     height: 50px;
     margin-top: 0;
-    width: 50%;
+    margin-bottom: 15px;
+  }
+  .metaschool-features .row {
+    align-items: inherit;
+    border-bottom: 1px solid #e8ecec;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
   }
 }
