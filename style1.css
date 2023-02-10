@@ -39,6 +39,18 @@ p {
   padding: 12px 29px;
   transition: all 0.2s ease 0s;
 }
+.btn-outline-primary {
+  border: 1px solid #c53aae;
+  color: #c53aae;
+  background-color: #fff;
+  border-radius: 15px;
+  color: #c53aae;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 13px;
+  padding: 12px 29px;
+  transition: all 0.2s ease 0s;
+}
 .container h1 {
   color: #303030;
   float: left;
@@ -335,6 +347,17 @@ p {
 .metaschool-features h3 {
   font-size: 22px;
   margin-bottom: 13px;
+  font-weight: 600;
+}
+.feature-img{
+  align-items: center;
+  border-radius: 30px;
+  display: flex;
+  float: left;
+  font-size: 80px;
+  height: 270px;
+  justify-content: center;
+  width: 90%;
 }
 
 
@@ -368,6 +391,9 @@ p {
     font-size: 14px;
     min-height: 45px;
     padding: 11px 17px;
+  }
+  .feature-img {
+    font-size: 48px;
   }
 }
 @media (max-width: 760px) {
@@ -433,6 +459,15 @@ p {
   }
   .logos {
     margin-top: 10px;
+  }
+  .metaschool-features h3 {
+    font-size: 17px;
+    margin-bottom: 10px;
+  }
+  .metaschool-features p {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 0;
   }
 }
 
@@ -523,5 +558,14 @@ p {
   }
   .logos span {
     font-size: 10px;
+  }
+
+  .first-col{
+    flex: 0 0 auto;
+    width: 41.66666667%;
+  }
+  .second-col{
+    flex: 0 0 auto;
+width: 58.33333333%;
   }
 }
