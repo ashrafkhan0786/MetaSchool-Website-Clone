@@ -372,7 +372,7 @@ p {
   .showcase .showcase-head h1 {
     font-size: 40px;
     margin-top: 0;
-    line-height 47;
+    line-height: 47px;
   }
   .btn.btn-lg {
     font-size: 14px;
@@ -567,5 +567,12 @@ p {
   .second-col{
     flex: 0 0 auto;
 width: 58.33333333%;
+  }
+  .feature-img {
+    border-radius: 10px;
+    font-size: 17px;
+    height: 50px;
+    margin-top: 0;
+    width: 50%;
   }
 }
