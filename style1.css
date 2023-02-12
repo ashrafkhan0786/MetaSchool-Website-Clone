@@ -401,12 +401,13 @@ h2{
   border-radius: 50%;
   float: left;
   width: 49px;
+  max-width: none;
 }
 .tweet-details {
   padding-left: 9px;
 }
 .tweet-details p {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 25px;
 }
 
