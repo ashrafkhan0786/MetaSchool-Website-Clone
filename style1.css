@@ -374,6 +374,17 @@ p {
   font-size: 16px;
 }
 
+
+h2{
+  font-size: calc(1.325rem + .9vw);
+}
+
+
+
+
+
+
+
 /* ##################### Media Query####### */
 
 @media (max-width: 980px) {
@@ -410,6 +421,10 @@ p {
   .second-col {
     flex: 0 0 auto;
     width: 50%;
+  }
+  .dev-box{
+    flex: 0 0 auto;
+    width: 100%;
   }
 }
 @media (max-width: 760px) {
