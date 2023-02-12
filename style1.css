@@ -379,6 +379,10 @@ h2{
   font-size: calc(1.325rem + .9vw);
 }
 
+.tweets-row{
+  margin-right: calc(1.5rem*-.5);
+  margin-left: calc(1.5rem*-.5);
+}
 .tweet-metaschool{
   background: #fff;
   border-radius: 36px;
