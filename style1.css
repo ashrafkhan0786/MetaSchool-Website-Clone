@@ -461,6 +461,14 @@ h2 {
   transition: all 0.2s ease 0s;
 }
 
+.bottomline {
+  border-top: 1px solid #e8ecec;
+  float: left;
+  padding: 25px 0;
+  width: 100%;
+  background: #fff;
+}
+
 
 
 
