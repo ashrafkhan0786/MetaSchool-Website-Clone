@@ -64,7 +64,7 @@ p {
 .container {
   color: #444;
   float: left;
-  margin-bottom: 26px;
+  /* margin-bottom: 26px; */
   margin-top: 10px;
   width: 100%;
 }
@@ -423,7 +423,7 @@ h2 {
   background: #da4ad2;
 }
 
-.contact .function span{
+.contact .function span {
   color: #666;
   float: left;
   font-size: 15px;
@@ -440,16 +440,16 @@ h2 {
   margin: 1px 0;
   width: 100%;
 }
-.contact .function a.see{
+.contact .function a.see {
   color: #da4ad2;
   border-bottom: 1px solid #da4ad2;
-  width: 60px
+  width: 60px;
 }
-.contact .function a:hover{
+.contact .function a:hover {
   color: #c53aae;
   transition: all 0.2s ease-in-out;
 }
-.left-logo a.btn2{
+.left-logo a.btn2 {
   border: 1px solid #888;
   color: #666;
   background-color: none;
@@ -464,15 +464,49 @@ h2 {
 .bottomline {
   border-top: 1px solid #e8ecec;
   float: left;
-  padding: 25px 0;
+  padding: 25px 0 20px 0;
   width: 100%;
   background: #fff;
 }
+.bottomline .bottom-container {
+  max-width: 100%;
+  padding: 0 50px;
+}
+.f-social {
+  float: left;
+  margin-top: 9px;
+  width: auto;
+}
+.f-social span {
+  color: #666;
+  float: left;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 14px;
+  margin-right: 9px;
+}
+.f-social a {
+  float: left;
+  margin-right: 10px;
+}
+.bottomline p {
+  float: right;
+  font-size: 15px;
+  margin: 0;
+}
+.credits {
+  background-color: #fff;
+  font-size: 2rem;
+  text-align: center;
+  padding: 2.5rem 1rem;
+  margin-top: 1rem;
+  border-top: 1px solid #393939;
+  color: #666;
+}
 
-
-
-
-
+.credits span {
+  color: #da4ad2;
+}
 
 /* ##################### Media Query####### */
 
@@ -605,19 +639,27 @@ h2 {
     flex: 0 0 auto;
     width: 50%;
   }
-  .contact .function .quick-links.quick-links, .contact .function .blockchain, .contact .function .recent{
+  .contact .function .quick-links.quick-links,
+  .contact .function .blockchain,
+  .contact .function .recent {
     display: none;
   }
 
-  .contact .function{
+  .contact .function {
     display: inline-block;
-}
-.contact .function .small-logo{
-  width: 50%;
-}
-.contact .function span{
-  padding-left: 0;
-}
+  }
+  .contact .function .small-logo {
+    width: 50%;
+  }
+  .contact .function span {
+    padding-left: 0;
+    font-size: 13px;
+  }
+  .bottomline .bottom-container {
+    padding: 0 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 @media (max-width: 540px) {
@@ -740,5 +782,28 @@ h2 {
   .action-bar h3 {
     margin-bottom: 15px;
     font-size: 17px;
+  }
+  .bottomline {
+    padding-bottom: 10px;
+    padding-top: 20px;
+    text-align: center;
+  }
+  .bottomline .f-social {
+    display: inline-block;
+    float: none;
+    width: auto;
+  }
+  .bottomline .bottom-container {
+    max-width: 540px;
+    padding: 0 50px;
+  }
+  .bottomline p {
+    float: left;
+    margin-bottom: 0;
+    width: 100%;
+    font-size: 13px;
+  }
+  .credits {
+    font-size: 1.5rem;
   }
 }
