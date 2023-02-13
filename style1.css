@@ -430,11 +430,12 @@ h2 {
   line-height: 31px;
   margin: 1px 0;
   width: 100%;
+  padding-left: 20px;
 }
 .contact .function a {
   color: #666;
   float: left;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 31px;
   margin: 1px 0;
   width: 100%;
@@ -448,6 +449,22 @@ h2 {
   color: #c53aae;
   transition: all 0.2s ease-in-out;
 }
+.left-logo a.btn2{
+  border: 1px solid #888;
+  color: #666;
+  background-color: none;
+  border-radius: 18px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 13px;
+  padding: 6px 15px;
+  transition: all 0.2s ease 0s;
+}
+
+
+
+
+
 
 /* ##################### Media Query####### */
 
@@ -580,6 +597,19 @@ h2 {
     flex: 0 0 auto;
     width: 50%;
   }
+  .contact .function .quick-links.quick-links, .contact .function .blockchain, .contact .function .recent{
+    display: none;
+  }
+
+  .contact .function{
+    display: inline-block;
+}
+.contact .function .small-logo{
+  width: 50%;
+}
+.contact .function span{
+  padding-left: 0;
+}
 }
 
 @media (max-width: 540px) {
