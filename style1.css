@@ -773,6 +773,8 @@ h2 {
   }
   .tweet-metaschool {
     display: inline-block;
+    height: auto;
+    width: 300px;
   }
 
   .action-bar {
@@ -804,6 +806,6 @@ h2 {
     font-size: 13px;
   }
   .credits {
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
 }
