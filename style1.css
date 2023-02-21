@@ -134,7 +134,7 @@ p {
   padding: 20px 25px;
   transition: all 0.2s ease 0s;
 }
-.topline .navbar-items .nav-items a:hover{
+.topline .navbar-items .nav-items a.x:hover{
   color: #c53aae;
 }
 .topline .navbar-items .btn.btn-primary {
