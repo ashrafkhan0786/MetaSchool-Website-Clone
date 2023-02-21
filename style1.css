@@ -51,6 +51,9 @@ p {
   padding: 12px 29px;
   transition: all 0.2s ease 0s;
 }
+.btn-outline-primary:hover{
+  background-color: #f7def5;
+}
 .container h1 {
   color: #303030;
   float: left;
@@ -130,6 +133,9 @@ p {
   font-size: 15px;
   padding: 20px 25px;
   transition: all 0.2s ease 0s;
+}
+.topline .navbar-items .nav-items a:hover{
+  color: #c53aae;
 }
 .topline .navbar-items .btn.btn-primary {
   color: #fff;
